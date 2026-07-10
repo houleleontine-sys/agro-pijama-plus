@@ -3,27 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AGRO-PYJAMA PLUS</title>
+<title>AGRO-PIJAMA PLUS</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
-scroll-behavior:smooth;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#f5f5f5;
+background:#f5f7f2;
 color:#333;
 line-height:1.6;
 }
 
 header{
 background:#2E7D32;
-color:#fff;
+color:white;
 padding:15px 8%;
 display:flex;
 justify-content:space-between;
@@ -51,36 +49,37 @@ color:#FFD54F;
 
 .hero{
 height:90vh;
-background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80");
-background-size:cover;
-background-position:center;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-color:white;
 padding:20px;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+color:white;
 }
 
 .hero h1{
 font-size:48px;
-margin-bottom:15px;
+margin-bottom:20px;
 }
 
 .hero p{
 font-size:20px;
+max-width:700px;
+margin:auto;
 margin-bottom:30px;
 }
 
 .btn{
 display:inline-block;
+padding:15px 30px;
 background:#FFD54F;
 color:#222;
-padding:14px 30px;
 text-decoration:none;
-border-radius:6px;
 font-weight:bold;
+border-radius:6px;
 margin:5px;
 }
 
@@ -94,8 +93,8 @@ padding:70px 8%;
 
 .titre{
 text-align:center;
-font-size:35px;
 color:#2E7D32;
+font-size:34px;
 margin-bottom:40px;
 }
 
@@ -109,7 +108,7 @@ gap:25px;
 background:white;
 padding:25px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
+box-shadow:0 5px 15px rgba(0,0,0,.12);
 text-align:center;
 }
 
@@ -128,11 +127,17 @@ text-align:center;
 padding:40px 20px;
 }
 
-footer a{
-color:#FFD54F;
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
 text-decoration:none;
+font-size:24px;
 }
-
 </style>
 
 </head>
@@ -142,11 +147,12 @@ text-decoration:none;
 <header>
 
 <div class="logo">
-🌿 AGRO-PYJAMA PLUS
+🌿 AGRO-PIJAMA PLUS
 </div>
 
 <nav>
 <a href="#accueil">Accueil</a>
+<a href="#apropos">À propos</a>
 <a href="#produits">Produits</a>
 <a href="#formations">Formations</a>
 <a href="#contact">Contact</a>
@@ -158,70 +164,57 @@ text-decoration:none;
 
 <div>
 
-<h1>Bienvenue chez AGRO-PYJAMA PLUS</h1>
+<h1>Bienvenue chez AGRO-PIJAMA PLUS</h1>
 
 <p>
-L'agriculture moderne au service de votre réussite.
+Cultivons l'avenir, élevons la qualité.
+Votre partenaire en agriculture moderne, élevage et formation.
 </p>
 
-<a href="#produits" class="btn">Découvrir nos produits</a>
+<a href="#produits" class="btn">Nos Produits</a>
 
 <a href="#contact" class="btn">Nous contacter</a>
 
 </div>
 
-</section><section id="produits">
-
-<h2 class="titre">Nos Produits</h2>
-
-<div class="cards">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1506976785307-8732e854ad03?auto=format&fit=crop&w=600&q=80" alt="Œufs">
-<h3>🥚 Œufs frais</h3>
-<p>Œufs de qualité, frais et produits dans de bonnes conditions d'élevage.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=600&q=80" alt="Poulets">
-<h3>🐔 Poulets de chair</h3>
-<p>Poulets sains, bien nourris et prêts pour la consommation.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=600&q=80" alt="Poules">
-<h3>🐓 Poules pondeuses</h3>
-<p>Poules sélectionnées pour une excellente production d'œufs.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="formations">
+</section><section id="formations">
 
 <h2 class="titre">Nos Formations</h2>
 
 <div class="cards">
 
 <div class="card">
+<h3>🐔 Élevage de poulets de chair</h3>
+<p>Apprenez les techniques modernes pour réussir votre élevage de volailles.</p>
+</div>
+
+<div class="card">
+<h3>🥚 Élevage de poules pondeuses</h3>
+<p>Formation pratique pour une production d'œufs rentable et durable.</p>
+</div>
+
+<div class="card">
+<h3>🌽 Fabrication d'aliments</h3>
+<p>Découvrez comment produire des aliments équilibrés pour vos volailles.</p>
+</div>
+
+<div class="card">
 <h3>🌱 Agriculture moderne</h3>
-<p>Apprenez les meilleures techniques de production agricole.</p>
+<p>Des méthodes agricoles innovantes pour améliorer vos rendements.</p>
 </div>
+
+</div>
+
+</section>
+
+<section id="galerie">
+
+<h2 class="titre">Galerie</h2>
+
+<div class="cards">
 
 <div class="card">
-<h3>🐥 Élevage de volailles</h3>
-<p>Formation pratique sur l'élevage des poulets de chair et des pondeuses.</p>
-</div>
-
-<div class="card">
-<h3>🤝 Accompagnement</h3>
-<p>Nous accompagnons les porteurs de projets agricoles vers la réussite.</p>
-</div>
-
-</div>
-
-</section><section id="contact">
+<img src="https://images.unsplash.com/photo-1542838132-92<section id="contact">
 
 <h2 class="titre">Contactez-nous</h2>
 
@@ -234,20 +227,16 @@ L'agriculture moderne au service de votre réussite.
 
 <div class="card">
 <h3>💬 WhatsApp</h3>
-<p>
-<a href="https://wa.me/2290157045275" target="_blank">
-Écrire sur WhatsApp
-</a>
-</p>
+<p><a href="https://wa.me/2292290157045275" target="_blank">Discuter sur WhatsApp</a></p>
 </div>
 
 <div class="card">
-<h3>✉️ E-mail</h3>
-<p>contact@agropijamaplus.com</p>
+<h3>📧 E-mail</h3>
+<p><a href="mailto:louangemarie529@gmail.com">louangemarie529@gmail.com</a></p>
 </div>
 
 <div class="card">
-<h3>📍 Adresse</h3>
+<h3>📍 Localisation</h3>
 <p>Bénin</p>
 </div>
 
@@ -257,30 +246,32 @@ L'agriculture moderne au service de votre réussite.
 
 <footer>
 
-<h2>🌿 AGRO-PYJAMA PLUS</h2>
+<h2>🌿 AGRO-PIJAMA PLUS</h2>
 
-<p>L'agriculture moderne au service de votre réussite.</p>
+<p><strong>Cultivons l'avenir, élevons la qualité.</strong></p>
 
-<p>
-Téléphone : +229 01 92 59 96 08
-</p>
+<p>Production agricole • Élevage • Formations • Accompagnement</p>
 
-<p>
-WhatsApp :
-<a href="https://wa.me/2290157045275">
-01 57 04 52 75
-</a>
-</p>
+<p>📞 +229 01 92 59 96 08</p>
 
-<p>
-Email : contact@agropijamaplus.com
-</p>
+<p>💬 WhatsApp : +229 01 57 04 52 75</p>
+
+<p>📧 louangemarie529@gmail.com</p>
+
+<p>📍 Bénin</p>
 
 <p style="margin-top:20px;">
-© 2026 AGRO-PYJAMA PLUS - Tous droits réservés.
+© 2026 AGRO-PIJAMA PLUS - Tous droits réservés.
 </p>
 
 </footer>
 
+<a class="whatsapp"
+href="https://wa.me/2290157045275"
+target="_blank"
+title="Discuter sur WhatsApp">
+💬
+</a>
+
 </body>
-</html>
+  </html>
